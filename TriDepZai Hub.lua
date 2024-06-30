@@ -13,17 +13,17 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "settings" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "box" }),
-    Teleport = Window:AddTab({ Title = "Island", Icon = "palmtree" }),
-    Fruit = Window:AddTab({ Title = "Fruit", Icon = "cherry" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "swords" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
-	Misc = Window:AddTab({ Title = "Misc", Icon = "list-plus" }),
-    Hop = Window:AddTab({ Title = "Hop", Icon = "wifi" }),
+    Main = Window:AddTab({ Title = "Main"
+    Setting = Window:AddTab({ Title = "Setting"
+    Stats = Window:AddTab({ Title = "Stats"
+    Player = Window:AddTab({ Title = "Player"
+    Teleport = Window:AddTab({ Title = "Island"
+    Fruit = Window:AddTab({ Title = "Fruit"
+    Raid = Window:AddTab({ Title = "Raid"
+    Race = Window:AddTab({ Title = "Race V4"
+    Shop = Window:AddTab({ Title = "Shop"
+	Misc = Window:AddTab({ Title = "Misc"
+    Hop = Window:AddTab({ Title = "Hop"
 }
 local Options = Fluent.Options
 do
@@ -2527,11 +2527,11 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
     DropdownDelayAttack:OnChanged(function(Value)
     _G.FastAttackFaiFao_Mode = Value
 	if _G.FastAttackFaiFao_Mode == "Fast Attack" then
-		_G.Fast_Delay = 0.12
+		_G.Fast_Delay = 0.10
 	elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
 		_G.Fast_Delay = 0.2
 	elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
-		_G.Fast_Delay = 0.05
+		_G.Fast_Delay = 0.0
 	end
 end)
 
@@ -4635,8 +4635,7 @@ if Second_Sea then
             end
         end)
     end
---------------------------------------------------------------------------------------------------------------------------------------------
---Setting
+----------------------------------------------------------------------------------------------------------------------------------------------
 local SettingFarm = Tabs.Setting:AddSection("Farming")
 
 
@@ -7000,7 +6999,7 @@ Tabs.Misc:AddButton({
 		local UICorner = Instance.new("UICorner")
 	
 		local ScreenGui = Instance.new("ScreenGui")
-		local ImageButton = Instance.new("ImageButton")
+		local ImageButton = Instance.new("16285097199")
 		local RobloxButton = Enum.ButtonStyle.RobloxButton
 	
 		ScreenGui.Parent = game.CoreGui
@@ -7301,7 +7300,7 @@ SaveManager:SetFolder("FaiFaoScriptHub/specific-game")
 Window:SelectTab(1)
 Fluent:Notify({
     Title = "Fai Fao Hub",
-    Content = "The script has been loaded.",
+    Content = "Loading thành công.",
     Duration = 8
 })
 SaveManager:LoadAutoloadConfig()
